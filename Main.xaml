@@ -1,0 +1,422 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="870,8605.333333333334" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFImages</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.PDF</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="880,8540.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <upap:ExtractImagesFromPDF DisplayName="Extract Images From PDF" FileName="C:\RPA-2024\CERTIFICATE_CREATOR_PROJECT\SIGN.pdf" sap:VirtualizedContainerService.HintSize="818,124" sap2010:WorkflowViewState.IdRef="ExtractImagesFromPDF_1" OutputFolderName="C:\RPA-2024\CERTIFICATE_CREATOR_PROJECT" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: CERTIFICATE_CREATOR_PROJECT" sap:VirtualizedContainerService.HintSize="818,3616" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="44815c00-e382-4a71-9c1c-57bce23597f9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,3278.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SIGN.1.1'" sap:VirtualizedContainerService.HintSize="450,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="44815c00-e382-4a71-9c1c-57bce23597f9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvTextArea="306, 465, 972, 18" CvTextArgument="SIGN.1.1 19-03-2024 12:51 PNG File 8 KB" CvType="Text" DesignTimeRectangle="272, 453, 1013, 41" DesignTimeScaleFactor="1.5" ElementType="ListItem" FullSelectorArgument="&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='4' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='4' role='list item' check:text='SIGN.1.1' /&gt;" Guid="a3d3b2d4-0568-41a2-91e2-651ee50de0d3" InformativeScreenshot="a03479c01a23df359f307ced1781270b.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='CERTIFICATE_CREATOR_PROJECT' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="450,225.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V3" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: PowerPoint" sap:VirtualizedContainerService.HintSize="450,2766.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2444" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pinned'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="394, 567, 67, 22" CvTextArgument="Pinned" CvType="Text" DesignTimeRectangle="375, 558, 96, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;uia automationid='PlaceTabHomeContent' cls='NetUIScrollViewer' name='Home' /&gt;&lt;uia automationid='GroupRecentDocuments' cls='NetUISlabContainer' name='Open' /&gt;&lt;uia cls='NetUIPanViewer' /&gt;&lt;uia cls='NetUITabHeader' name='Pinned' /&gt;" FuzzySelectorArgument="&lt;uia automationid='PlaceTabHomeContent' cls='NetUIScrollViewer' name='Home' /&gt;&lt;uia automationid='GroupRecentDocuments' cls='NetUISlabContainer' name='Open' /&gt;&lt;uia cls='NetUIPanViewer' /&gt;&lt;uia cls='NetUITabHeader' name='Pinned' role='Tab Item' automationid='' check:fulltext='Pinned' /&gt;" Guid="e8a57fac-1d23-444d-9daa-d41067b71829" InformativeScreenshot="22dcc304b1c41feb07e227ed1bf25f68.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Icon'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="288, 686, 50, 53" CvType="Icon" DesignTimeRectangle="286, 684, 54, 57" DesignTimeScaleFactor="1.5" ElementType="Icon" Guid="11a1d4fe-2681-4a49-bf7b-530900043bfc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAA5CAYAAAB9E9gIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAIcSURBVGhD7ZrBKwRRHMf9If4Cf4GTq3JU/AHcEKkthFByUHJQTi4u2uUsNxeKWlolkUJhtXuwaXJYu/jxneZNY/xmzJudGfOm961PO733Zt7305vTNm2U0Wgx1aLFVIsWUy2hxXYKeZqayMXC7PQkPZXL1k7hEloMBQzDoEajETl49sLcTEtyLYlxpaIAzy7kt0y505OitaNcUiuGX8jhOoxcqsVAWLnUi4EwckqIAVk5ZcSAjJxSYiConHJiIIhcKsVE8SB4JZDY9dI4HXa1R8rV4hgrJUPLYlyxKODKyqDFvMKVigKurBs62jX5ON2nZq36Yy4TYoJm5d6ei03spXRkrfgdzJUGutn7BE6Bt5sLaqxP0OfKENHqsD3uFjPlrJP7FzHk/dWgYn8ney+wpc4ObCGBnxhey8TExNhxTwdV97atUaLyzsaPe5yI8m6pv8RA4mICEaxxzwns8i6p1IpdTg9ao8FOzE/Mj0TEzkf7TG7X5qleebBGyZTk7gWiYKrFuPidFhAFn0e6A5O4GK4FEPI7KYGsWC3Xm7wYN/8XsmLG5rJaYjgJTsQJ1tQrj2qJ1e+ufOVMqe81TimQejGA08Cr5hTENcbcJyWITaxVuLIyaDGvcKWigCsrgxbzSmb/zOGCh3KbJYkWk4kWixEtJhMtFiNaTCaZFovrA5YgYO9YxOL85Cgo6OCV0GJpjxZTLVpMtWRUjOgLukpNxIKUGJsAAAAASUVORK5CYII=" InformativeScreenshot="61b6f3f94c67ea945968e12ccb17a5cf.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='PowerPoint' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CERTIFICATE'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="988, 372, 225, 27" CvTextArgument="CERTIFICATE" CvType="Text" DesignTimeRectangle="709, 367, 787, 32" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia name='Title TextBox' role='textbox' /&gt;" FuzzySelectorArgument="&lt;uia name='Title TextBox' role='textbox' automationid='' /&gt;" Guid="403e5161-3793-432d-9b06-e4923a6925d7" InformativeScreenshot="49931587611b5a270e3019a46fecd0bd.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,225.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Picture 9'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="1017, 553, 175, 119" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;uia name='Picture 9' role='image' /&gt;" FuzzySelectorArgument="&lt;uia name='Picture 9' role='image' automationid='' check:fulltext='Picture 9' /&gt;" Guid="ac6070f8-a2c1-40b9-b1bb-6d91468d00b7" InformativeScreenshot="74eda630b53773540e3e61644be40ca2.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Size and Position...'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="1843, 220, 24, 24" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Picture Format' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia automationid='ObjectSizeAndPositionDialog' cls='NetUISimpleButton' name='Size and Position...' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Picture Format' /&gt;&lt;uia cls='NetUIChunk' name='Size' /&gt;&lt;uia automationid='ObjectSizeAndPositionDialog' cls='NetUISimpleButton' name='Size and Position...' role='Button' check:fulltext='Size and Position...' /&gt;" Guid="c32b0393-7e18-49b3-ad0b-3b962f4087f8" InformativeScreenshot="23870a2f535f5592e0c88651df8c3818.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Position'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="1549, 916, 72, 19" CvTextArgument="Position" CvType="Text" DesignTimeRectangle="1553, 915, 70, 25" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Position' /&gt;&lt;uia cls='NetUILabel' name='Position' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Position' /&gt;&lt;uia cls='NetUILabel' name='Position' role='Text' automationid='' check:fulltext='Position' /&gt;" Guid="15dc0b92-13aa-4e6a-bc3e-f30fd913fd07" InformativeScreenshot="7f8055c9a8c21dc91f3832aecf7f1f26.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="1526, 913, 22, 25" CvTextArea="1549, 916, 72, 19" CvTextArgument="Position" CvType="ArrowButton" DesignTimeRectangle="1524, 914, 360, 27" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Position' /&gt;&lt;uia cls='NetUIRibbonButton' name='Position' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Position' /&gt;&lt;uia cls='NetUIRibbonButton' name='Position' role='Button' automationid='' check:fulltext='Position' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Page down'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="1888, 802, 26, 134" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIRepeatButton' name='Page down' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIRepeatButton' name='Page down' role='Button' automationid='' check:fulltext='Page down' /&gt;" Guid="0ddb9fff-0b89-42da-ba6b-2343d3476c3e" InformativeScreenshot="e51acf351d605e6e7e1450bc28e1aeba.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '6.5 cm'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Text="6.5cm[k(Enter)]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CvElementArea="1773, 750, 110, 34" CvType="InputBox" DesignTimeRectangle="1778, 754, 79, 28" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Position' /&gt;&lt;uia cls='NetUITextbox' name='Horizontal position' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Position' /&gt;&lt;uia cls='NetUITextbox' name='Horizontal position' role='Edit Box' automationid='' check:text='6.5 cm' /&gt;" Guid="032eb0a0-c188-4d34-ae5f-c817d41e54ad" InformativeScreenshot="8552606412c255cc08bd3c5fa0f40110.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '8.26 cm'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="7d577dfc-5d90-4685-b9c9-5218cbfaaf7c" Text="13.25cm[k(Enter)]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable CvElementArea="1774, 832, 109, 35" CvType="InputBox" DesignTimeRectangle="1778, 836, 79, 28" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Position' /&gt;&lt;uia cls='NetUITextbox' name='Vertical position' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Position' /&gt;&lt;uia cls='NetUITextbox' name='Vertical position' role='Edit Box' automationid='' check:text='8.26 cm' /&gt;" Guid="6b167f39-f1a4-4849-85ba-a2c4efab2489" InformativeScreenshot="1f96adcb9dd327c8247fab3f6ec08cc1.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,210.66666666666666" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V3" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-11, -11, 1942, 1030" FilePath="C:\Program Files\Microsoft Office\root\Office16\powerpnt.exe" IconBase64="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" InformativeScreenshot="5f6f3d3d0f28108baf6c9417a96214e8.png" Selector="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='PowerPoint' /&gt;" Title="PowerPoint" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" Arguments="c:\rpa-2024\certificate_creator_project" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="bbae2aa05b3960726fbf15b1ebdd1ca9.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='CERTIFICATE_CREATOR_PROJECT' /&gt;" Title="CERTIFICATE_CREATOR_PROJECT" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="818,4712.666666666667" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="784,4602.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="722,4518" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" UseTemplate="True" WorkbookPath="C:\RPA-2024\CERTIFICATE_CREATOR_PROJECT\STUDENT_DETAILS.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,4192" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="626,4107.333333333333" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,3886.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: PowerPoint" sap:VirtualizedContainerService.HintSize="530,3802" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f20f271b-d7ea-4630-9200-492381fac4c6" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,3482" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="name" />
+                                      <Variable x:TypeArguments="x:String" Name="subject" />
+                                      <Variable x:TypeArguments="x:String" Name="ranking" />
+                                      <Variable x:TypeArguments="x:String" Name="college_name" />
+                                      <Variable x:TypeArguments="x:String" Name="dat" />
+                                      <Variable x:TypeArguments="x:String" Name="mail" />
+                                      <Variable x:TypeArguments="x:String" Name="variable1" />
+                                      <Variable x:TypeArguments="x:String" Name="pdf_file" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pinned'" sap:VirtualizedContainerService.HintSize="434,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CvTextArea="394, 567, 67, 22" CvTextArgument="Pinned" CvType="Text" DesignTimeRectangle="375, 558, 96, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;uia automationid='PlaceTabHomeContent' cls='NetUIScrollViewer' name='Home' /&gt;&lt;uia automationid='GroupRecentDocuments' cls='NetUISlabContainer' name='Open' /&gt;&lt;uia cls='NetUIPanViewer' /&gt;&lt;uia cls='NetUITabHeader' name='Pinned' /&gt;" FuzzySelectorArgument="&lt;uia automationid='PlaceTabHomeContent' cls='NetUIScrollViewer' name='Home' /&gt;&lt;uia automationid='GroupRecentDocuments' cls='NetUISlabContainer' name='Open' /&gt;&lt;uia cls='NetUIPanViewer' /&gt;&lt;uia cls='NetUITabHeader' name='Pinned' role='Tab Item' automationid='' check:fulltext='Pinned' /&gt;" Guid="468327b6-93e2-41de-a4e9-0ea1e66beb99" InformativeScreenshot="a510bed068580fabaeda85c5db3c395f.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Icon'" sap:VirtualizedContainerService.HintSize="434,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CvElementArea="288, 686, 50, 53" CvType="Icon" DesignTimeRectangle="286, 684, 54, 57" DesignTimeScaleFactor="1.5" ElementType="Icon" Guid="4a7e2056-68cd-4500-822b-43b6f712f35c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAA5CAYAAAB9E9gIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAIcSURBVGhD7ZrBKwRRHMf9If4Cf4GTq3JU/AHcEKkthFByUHJQTi4u2uUsNxeKWlolkUJhtXuwaXJYu/jxneZNY/xmzJudGfOm961PO733Zt7305vTNm2U0Wgx1aLFVIsWUy2hxXYKeZqayMXC7PQkPZXL1k7hEloMBQzDoEajETl49sLcTEtyLYlxpaIAzy7kt0y505OitaNcUiuGX8jhOoxcqsVAWLnUi4EwckqIAVk5ZcSAjJxSYiConHJiIIhcKsVE8SB4JZDY9dI4HXa1R8rV4hgrJUPLYlyxKODKyqDFvMKVigKurBs62jX5ON2nZq36Yy4TYoJm5d6ei03spXRkrfgdzJUGutn7BE6Bt5sLaqxP0OfKENHqsD3uFjPlrJP7FzHk/dWgYn8ney+wpc4ObCGBnxhey8TExNhxTwdV97atUaLyzsaPe5yI8m6pv8RA4mICEaxxzwns8i6p1IpdTg9ao8FOzE/Mj0TEzkf7TG7X5qleebBGyZTk7gWiYKrFuPidFhAFn0e6A5O4GK4FEPI7KYGsWC3Xm7wYN/8XsmLG5rJaYjgJTsQJ1tQrj2qJ1e+ufOVMqe81TimQejGA08Cr5hTENcbcJyWITaxVuLIyaDGvcKWigCsrgxbzSmb/zOGCh3KbJYkWk4kWixEtJhMtFiNaTCaZFovrA5YgYO9YxOL85Cgo6OCV0GJpjxZTLVpMtWRUjOgLukpNxIKUGJsAAAAASUVORK5CYII=" InformativeScreenshot="ed836d9751f9522b6398b2d59957939a.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V3" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("NAME")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[subject]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("SUBJECT")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[ranking]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("RANKING")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[college_name]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("COLLEGE NAME")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[dat]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("DATE")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[mail]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.ByField("ADDRESS")]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'FromNMIMS, MPSTME'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Text="[&quot;From &quot; + college_name]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvTextArea="1003, 579, 207, 19" CvTextArgument="From NMIMS, MPSTME" CvType="Text" DesignTimeRectangle="768, 572, 679, 43" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia name='in recognition of your dedication, passion, and hard work' role='textbox' /&gt;" FuzzySelectorArgument="&lt;uia name='in recognition of your dedication, passion, and hard work' role='textbox' automationid='' /&gt;" Guid="19e3a99d-78b4-41bd-b7e3-500cef698e40" InformativeScreenshot="05d09e4763608f4b05b66eafdedd267a.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ROSHI BHATI'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Text="[name]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvTextArea="798, 469, 616, 61" CvTextArgument="RAHUL THAMBI" CvType="Text" DesignTimeRectangle="714, 460, 787, 101" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia idx='2' name='TextBox' role='textbox' /&gt;" FuzzySelectorArgument="&lt;uia automationid='' name='TextBox' role='textbox' /&gt;" Guid="8910ddf6-43af-41d8-aca7-ef5450a22063" InformativeScreenshot="5dafb00c70f3c9ce6431c8c500494197.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ForRANK 1inHACKATHON'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Text="[&quot;For &quot;+ranking+&quot; in &quot;+subject]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvTextArea="984, 658, 238, 19" CvTextArgument="For RANK in HACKATHON" CvType="Text" DesignTimeRectangle="765, 655, 679, 72" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia idx='6' name='TextBox' role='textbox' /&gt;" FuzzySelectorArgument="&lt;uia automationid='' name='TextBox' role='textbox' /&gt;" Guid="c0c13f97-b336-40c1-9f91-b9718d15ab33" InformativeScreenshot="b0df447225b25fc99fb734d70c7e6fcb.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '3/17/2024'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Text="[dat]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvElementArea="1136, 778, 255, 43" CvType="InputBox" DesignTimeRectangle="1131, 769, 293, 47" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia idx='3' name='TextBox' role='textbox' /&gt;" FuzzySelectorArgument="&lt;uia automationid='' name='TextBox' role='textbox' /&gt;" Guid="57d29505-f062-456f-8f15-96d81adf0ff7" InformativeScreenshot="c88653262afecc433837ab8c7bd579fa.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CERTIFICATE'" sap:VirtualizedContainerService.HintSize="434,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CvTextArea="742, 372, 225, 27" CvTextArgument="CERTIFICATE" CvType="Text" DesignTimeRectangle="463, 367, 787, 32" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia name='Title TextBox' role='textbox' /&gt;" FuzzySelectorArgument="&lt;uia name='Title TextBox' role='textbox' automationid='' /&gt;" Guid="ad9052c6-2339-42da-a1a2-8855b34e8489" InformativeScreenshot="39793f8f89ca89bf057f44c8aa8a6c9f.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='CERTIFICATE - PowerPoint' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,225.33333333333334" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)][d(hk)][d(alt)]f[u(alt)][u(hk)][d(hk)]e[u(hk)][d(hk)]a[u(hk)]" Version="V3" />
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CERTIFICATE'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Text="[name+&quot; Certifcate&quot;]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvElementArea="201, 536, 741, 36" CvType="InputBox" DesignTimeRectangle="202, 541, 710, 27" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="c9f48f1b-5115-4929-b70e-0acee2f4ed98" InformativeScreenshot="b0079d1c5067585e800a3f4050391cb1.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='#32770' title='Publish as PDF or XPS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="434,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f20f271b-d7ea-4630-9200-492381fac4c6" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CvElementArea="639, 819, 135, 41" CvTextArea="676, 829, 60, 21" CvTextArgument="Publish" CvType="Button" DesignTimeRectangle="641, 820, 132, 39" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='Publi&amp;amp;sh' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='Publi&amp;amp;sh' check:text='unchecked' /&gt;" Guid="2853f913-09b4-48dc-92b3-dc89adaa907f" InformativeScreenshot="b19238756fd6f0b242f5ec92726d4ae1.png" ScopeSelectorArgument="&lt;wnd app='powerpnt.exe' cls='#32770' title='Publish as PDF or XPS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[pdf_file]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">["C:\RPA-2024\CERTIFICATE_CREATOR_PROJECT\"+name+" Certifcate.pdf"]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear &quot;+name+&quot;please find attached your certificate for &quot;+subject]" DisplayName="Send SMTP Mail Message" Email="projectrpa02@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,181.33333333333334" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="newg oion phaw tmfr" Port="587" SecureConnection="Auto" Server="[“smtp.gmail.com”]" Subject="[&quot;CERTIFICATE FOR &quot;+name]" To="[mail]">
+                                      <ui:SendMail.Files>
+                                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                          <InArgument x:TypeArguments="x:String">
+                                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="pdf_file" />
+                                          </InArgument>
+                                        </scg:List>
+                                      </ui:SendMail.Files>
+                                    </ui:SendMail>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-11, -11, 1942, 1030" FilePath="C:\Program Files\Microsoft Office\root\Office16\powerpnt.exe" IconBase64="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" InformativeScreenshot="e1b6dbc307a74386cdc8ad7a76b7fa45.png" IsExactTitleEnabled="True" Selector="&lt;wnd app='powerpnt.exe' cls='PPTFrameClass' title='PowerPoint' /&gt;" Title="CERTIFICATE - PowerPoint" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
